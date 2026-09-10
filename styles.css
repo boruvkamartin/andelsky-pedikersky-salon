@@ -376,10 +376,12 @@ h1 em {
 }
 
 .trust-item__value {
+  flex-shrink: 0;
   color: var(--ink);
   font-family: var(--serif);
   font-size: 35px;
   line-height: 1;
+  white-space: nowrap;
 }
 
 .section {
@@ -419,38 +421,47 @@ h1 em {
 }
 
 .service-list {
-  max-width: 720px;
-  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
 
 .service {
-  display: grid;
-  grid-template-columns: 42px minmax(0, 1fr) auto;
-  gap: 16px 18px;
-  align-items: start;
-  padding: 18px 16px;
-  margin-inline: -16px;
-  border-bottom: 1px solid var(--line);
-  transition: background 180ms ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 24px 24px 26px;
+  border: 1px solid var(--line);
+  background: var(--white);
+  transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
 }
 
 .service:hover {
-  background: rgba(223, 232, 235, 0.45);
+  border-color: var(--blue);
+  background: #fbfcfc;
+  box-shadow: 0 16px 40px rgba(71, 104, 117, 0.1);
+}
+
+.service__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 28px;
 }
 
 .service__number {
   color: var(--blue-dark);
   font-family: var(--serif);
   font-size: 13px;
-  line-height: 1.5;
 }
 
 .service h3 {
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   font-family: var(--serif);
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .service p {
@@ -461,7 +472,6 @@ h1 em {
 }
 
 .service__tag {
-  margin-top: 3px;
   color: var(--muted);
   font-size: 11px;
   letter-spacing: 0.04em;
@@ -926,6 +936,10 @@ blockquote cite {
     gap: 28px;
   }
 
+  .service-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .price-intro {
     position: static;
   }
@@ -1036,20 +1050,17 @@ blockquote cite {
     margin-bottom: 48px;
   }
 
+  .service-list {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
   .service {
-    grid-template-columns: 32px 1fr;
-    gap: 10px 12px;
-    padding: 16px 8px;
-    margin-inline: -8px;
+    padding: 22px 20px 24px;
   }
 
   .service h3 {
-    font-size: 20px;
-  }
-
-  .service__tag {
-    grid-column: 2;
-    margin-top: -4px;
+    font-size: 24px;
   }
 
   .price-layout {
