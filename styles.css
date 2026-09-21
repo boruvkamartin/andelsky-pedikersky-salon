@@ -1513,6 +1513,10 @@ blockquote cite {
     gap: 34px;
   }
 
+  .contact {
+    padding-bottom: 28px;
+  }
+
   .detail-block--contact {
     flex-direction: column;
   }
