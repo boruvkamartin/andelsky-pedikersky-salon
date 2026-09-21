@@ -14,7 +14,7 @@
       content="Odborná a laskavá péče o vaše nohy v centru Trutnova."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/salon-hero.webp" />
+    <meta property="og:image" content="assets/salon-01.jpg" />
     <title>Andělský pedikérský salón | Trutnov</title>
     <script>document.documentElement.classList.add("js")</script>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -39,8 +39,13 @@
           "postalCode": "541 01",
           "addressCountry": "CZ"
         },
-        "priceRange": "500–1200 Kč",
-        "sameAs": ["https://www.notino.cz/salony/andelsky-pedikersky-salon/"]
+        "priceRange": "50–1200 Kč",
+        "paymentAccepted": "Hotovost, QR platba",
+        "sameAs": [
+          "https://www.notino.cz/salony/andelsky-pedikersky-salon/",
+          "https://www.facebook.com/profile.php?id=61565397658769",
+          "https://www.instagram.com/andelsky_pedikersky_salon/"
+        ]
       }
     </script>
   </head>
@@ -55,14 +60,7 @@
     <header class="site-header" data-header>
       <div class="container header-inner">
         <a class="brand" href="#uvod" aria-label="Andělský pedikérský salón – úvod">
-          <svg class="brand__mark" viewBox="0 0 42 42" aria-hidden="true">
-            <path d="M20.9 35.8C19.1 27.6 14.4 22 6 18.8c8.4-2.2 13.4-6.6 14.9-13.1 1.5 6.5 6.5 10.9 14.9 13.1-8.4 3.2-13.1 8.8-14.9 17Z" />
-            <path d="M10.3 27.7c3.5-1.1 7.1-.1 10.6 3 3.5-3.1 7.1-4.1 10.7-3" />
-          </svg>
-          <span class="brand__text">
-            <strong>Andělský</strong>
-            <span>pedikérský salón</span>
-          </span>
+          <img class="brand__logo" src="assets/salon-logo.jpg" alt="Andělský pedikérský salón" width="685" height="278" />
         </a>
 
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hlavni-menu">
@@ -74,7 +72,17 @@
           <a href="#sluzby">Služby</a>
           <a href="#cenik">Ceník</a>
           <a href="#salon">O salonu</a>
+          <a href="#certifikaty">Certifikáty</a>
+          <a href="#galerie">Galerie</a>
           <a href="#kontakt">Kontakt</a>
+          <div class="header-socials" aria-label="Sociální sítě">
+            <a href="https://www.facebook.com/profile.php?id=61565397658769" target="_blank" rel="noopener noreferrer" aria-label="Andělský pedikérský salón na Facebooku">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4.2c-.5-.1-2.2-.2-4.2-.2C8.8 4 7 6.4 7 10.7V14H3v4h4v10h5V18h4l.7-4H12v-2.9C12 9.9 12.4 8 14 8Z" /></svg>
+            </a>
+            <a href="https://www.instagram.com/andelsky_pedikersky_salon/" target="_blank" rel="noopener noreferrer" aria-label="Andělský pedikérský salón na Instagramu">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" class="social-icon-dot" /></svg>
+            </a>
+          </div>
           <a class="button button--small" href="https://www.notino.cz/salony/andelsky-pedikersky-salon/" target="_blank" rel="noopener noreferrer">
             Objednat se
           </a>
@@ -104,10 +112,10 @@
           <figure class="hero__visual reveal reveal--delay">
             <div class="hero__image-wrap">
               <img
-                src="assets/salon-hero.webp"
-                alt="Interiér Andělského pedikérského salonu v Trutnově"
-                width="1024"
-                height="635"
+                src="assets/salon-01.jpg"
+                alt="Světlý interiér Andělského pedikérského salonu v Trutnově"
+                width="1620"
+                height="1080"
                 fetchpriority="high"
               />
             </div>
@@ -192,36 +200,37 @@
       <section class="section price-section" id="cenik">
         <div class="container price-layout">
           <div class="price-intro reveal">
-            <p class="eyebrow">Orientační ceník</p>
+            <p class="eyebrow">Ceník</p>
             <h2>Vždy víte,<br />s čím počítat.</h2>
-            <p>Cena se odvíjí od rozsahu a náročnosti ošetření. Přesnou částku domluvíme předem.</p>
-            <a class="text-link" href="https://www.notino.cz/salony/andelsky-pedikersky-salon/" target="_blank" rel="noopener noreferrer">Kompletní nabídka a rezervace</a>
+            <p>U služeb s cenovým rozmezím se výsledná částka odvíjí od rozsahu ošetření.</p>
+            <a class="text-link" href="https://www.notino.cz/salony/andelsky-pedikersky-salon/" target="_blank" rel="noopener noreferrer">Rezervace termínu</a>
           </div>
 
-          <div class="price-card reveal reveal--delay">
-            <div class="price-row">
-              <div><strong>Suchá pedikúra</strong><span>bez lakování</span></div>
-              <span>500–650 Kč</span>
+          <div class="price-card price-card--columns reveal reveal--delay">
+            <div class="price-column">
+              <div class="price-row"><strong>Klasická „mokrá“ pedikúra</strong><span>450–550 Kč</span></div>
+              <div class="price-row"><strong>Přístrojová pedikúra i pro diabetiky</strong><span>500–650 Kč</span></div>
+              <div class="price-row"><strong>SPA pedikúra</strong><span>850 Kč</span></div>
+              <div class="price-row"><strong>Lakování laky a gellaky</strong><span>200–450 Kč</span></div>
+              <div class="price-row"><strong>Náhrada nehtové ploténky</strong><span>700–1 200 Kč</span></div>
+              <div class="price-row"><strong>Ošetření ragád (prasklin)</strong><span>150–200 Kč</span></div>
+              <div class="price-row"><strong>Ošetření zarostlého nehtu</strong><span>200–450 Kč</span></div>
+              <div class="price-row"><strong>Rovnátka Roos Fraser</strong><span>900 Kč</span></div>
+              <div class="price-row"><strong>Rovnátko – titanová nit</strong><span>450–700 Kč</span></div>
+              <div class="price-row"><strong>Gelová rovnátka Blue Light</strong><span>400–600 Kč</span></div>
+              <div class="price-row"><strong>Nalepovací rovnátka</strong><span>400–600 Kč</span></div>
             </div>
-            <div class="price-row">
-              <div><strong>Suchá pedikúra s lakováním</strong><span>klasický nebo gelový lak</span></div>
-              <span>700–900 Kč</span>
-            </div>
-            <div class="price-row">
-              <div><strong>Podologické ošetření</strong><span>podle rozsahu péče</span></div>
-              <span>200–1 200 Kč</span>
-            </div>
-            <div class="price-row">
-              <div><strong>Nehtová rovnátka</strong><span>podle zvoleného typu</span></div>
-              <span>400–900 Kč</span>
-            </div>
-            <div class="price-row">
-              <div><strong>Wellness pedikúra</strong><span>profesionální péče s relaxací</span></div>
-              <span>850 Kč</span>
-            </div>
-            <div class="price-row">
-              <div><strong>Parafínový zábal nohou</strong><span>samostatné ošetření</span></div>
-              <span>250 Kč</span>
+            <div class="price-column">
+              <div class="price-row"><strong>Meziprstní korektory</strong><span>150–300 Kč</span></div>
+              <div class="price-row"><strong>Tejpování nohou po kolena</strong><span>50–300 Kč</span></div>
+              <div class="price-row"><strong>Depilace nohou</strong><span>150–250 Kč</span></div>
+              <div class="price-row"><strong>Parafínový zábal nohou</strong><span>200 Kč</span></div>
+              <div class="price-row"><strong>Výživná maska, zábal nohou</strong><span>250 Kč</span></div>
+              <div class="price-row"><strong>Mimořádná kontrola po ošetření</strong><span>50–100 Kč</span></div>
+              <div class="price-row"><strong>Odstranění kuřího oka bez pedikúry</strong><span>70–100 Kč</span></div>
+              <div class="price-row"><strong>Relaxační masáž chodidel – 15 minut</strong><span>150 Kč</span></div>
+              <div class="price-row"><strong>Poradenství dle času</strong><span>100–200 Kč</span></div>
+              <div class="price-row"><strong>Sterilizace obuvi</strong><span>100–150 Kč</span></div>
             </div>
           </div>
         </div>
@@ -231,12 +240,12 @@
         <div class="container story__grid">
           <div class="story__images reveal">
             <figure class="image-card image-card--large">
-              <img src="assets/pristrojova-pedikura.webp" alt="Ilustrační fotografie přístrojové pedikúry" width="1256" height="1256" loading="lazy" />
+              <img src="assets/salon-05.jpg" alt="Pedikérské křeslo a vystavené certifikáty v salonu" width="1620" height="1080" loading="lazy" />
             </figure>
             <figure class="image-card image-card--small">
-              <img src="assets/hygiena-nastroje.webp" alt="Ilustrační fotografie připravených sterilních nástrojů" width="1256" height="1256" loading="lazy" />
+              <img src="assets/salon-03.jpg" alt="Vybavení Andělského pedikérského salonu" width="1620" height="1080" loading="lazy" />
             </figure>
-            <span class="illustration-note">Ilustrační fotografie</span>
+            <span class="illustration-note">Certifikovaná odborná péče</span>
           </div>
 
           <div class="story__content reveal reveal--delay">
@@ -259,18 +268,148 @@
         </div>
       </section>
 
-      <section class="voucher-section">
+      <section class="section certificates" id="certifikaty">
         <div class="container">
-          <div class="voucher reveal">
-            <div class="voucher__mark" aria-hidden="true">
-              <svg viewBox="0 0 90 90"><path d="M45 76C41 58 31 46 13 39c18-5 29-14 32-28 3 14 14 23 32 28-18 7-28 19-32 37Z" /></svg>
-            </div>
+          <div class="section-heading certificates__heading reveal">
             <div>
-              <p class="eyebrow">Dárkové poukazy</p>
-              <h2>Darujte lehký krok.</h2>
-              <p>Poukaz na péči o chodidla je milý a praktický dárek. Dostupnost a hodnotu poukazu si ověřte telefonicky.</p>
+              <p class="eyebrow">Certifikáty a vzdělávání</p>
+              <h2>Odbornost, kterou průběžně rozvíjíme.</h2>
             </div>
-            <a class="button button--light" href="tel:+420604866778">Zeptat se na poukaz</a>
+            <p>
+              Specializované kurzy, odborné konference a další vzdělávání jsou
+              základem bezpečné a kvalitní péče. Kliknutím si můžete každý dokument zvětšit.
+            </p>
+          </div>
+
+          <div class="certificates-grid">
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="Mykologie v podologii" aria-label="Zvětšit osvědčení Mykologie v podologii">
+              <span class="certificate-card__media"><img src="assets/certificate-01.jpg" alt="Osvědčení Mykologie v podologii" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>Mykologie v podologii</strong><span>2025</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="12. konference České podologické společnosti" aria-label="Zvětšit osvědčení z 12. konference České podologické společnosti">
+              <span class="certificate-card__media"><img src="assets/certificate-02.jpg" alt="Osvědčení o účasti na 12. konferenci České podologické společnosti" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>12. konference České podologické společnosti</strong><span>2025</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="11. konference České podologické společnosti" aria-label="Zvětšit osvědčení z 11. konference České podologické společnosti">
+              <span class="certificate-card__media"><img src="assets/certificate-03.jpg" alt="Osvědčení o účasti na 11. konferenci České podologické společnosti" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>11. konference České podologické společnosti</strong><span>2024</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="Metoda Arkady – 1. stupeň" aria-label="Zvětšit certifikát Metoda Arkady – 1. stupeň">
+              <span class="certificate-card__media"><img src="assets/certificate-04.jpg" alt="Certifikát Metoda Arkady – 1. stupeň" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>Metoda Arkady – 1. stupeň</strong><span>2025</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="Arkada’s Method – 1st level" aria-label="Zvětšit certifikát Arkada’s Method – 1st level">
+              <span class="certificate-card__media"><img src="assets/certificate-05.jpg" alt="Certificate Arkada’s Method – 1st level" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>Arkada’s Method – 1st level</strong><span>2025</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="Prověřená společnost" aria-label="Zvětšit certifikát Prověřená společnost 2025">
+              <span class="certificate-card__media"><img src="assets/certificate-06.jpg" alt="Certifikát Prověřená společnost 2025" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>Prověřená společnost</strong><span>2025</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="Ortopedické deformity v pedikérsko-podologické praxi" aria-label="Zvětšit osvědčení Ortopedické deformity v pedikérsko-podologické praxi">
+              <span class="certificate-card__media"><img src="assets/certificate-07.jpg" alt="Osvědčení Ortopedické deformity v pedikérsko-podologické praxi" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>Ortopedické deformity v praxi</strong><span>2025</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="Cosmetic Pedicure" aria-label="Zvětšit certifikát Cosmetic Pedicure">
+              <span class="certificate-card__media"><img src="assets/certificate-08.jpg" alt="Certificate Cosmetic Pedicure" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>Cosmetic Pedicure</strong><span>2025</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="UniBrace Specialist I Degree" aria-label="Zvětšit certifikát UniBrace Specialist I Degree">
+              <span class="certificate-card__media"><img src="assets/certificate-09.jpg" alt="Certificate UniBrace Specialist I Degree" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>UniBrace Specialist I Degree</strong><span>2025</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="MEDsport sympozium – diagnostika a léčba nohy" aria-label="Zvětšit certifikát MEDsport sympozium">
+              <span class="certificate-card__media"><img src="assets/certificate-10.jpg" alt="Certifikát MEDsport sympozium – diagnostika a léčba nohy" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>MEDsport sympozium</strong><span>2025</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="Odborný kurz podologie" aria-label="Zvětšit osvědčení Odborný kurz podologie">
+              <span class="certificate-card__media"><img src="assets/certificate-11.jpg" alt="Osvědčení o absolvování odborného kurzu podologie" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>Odborný kurz podologie</strong><span>2024</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="Zhotovování nehtových náhrad" aria-label="Zvětšit certifikát Zhotovování nehtových náhrad">
+              <span class="certificate-card__media"><img src="assets/certificate-12.jpg" alt="Certifikát Zhotovování nehtových náhrad" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>Zhotovování nehtových náhrad</strong><span>2024</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="OPI Gold Salon" aria-label="Zvětšit certifikát OPI Gold Salon 2024">
+              <span class="certificate-card__media"><img src="assets/certificate-13.jpg" alt="Certifikát OPI Gold Salon 2024" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>OPI Gold Salon</strong><span>2024</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="Výroba a aplikace nehtového rovnátka" aria-label="Zvětšit certifikát Výroba a aplikace nehtového rovnátka">
+              <span class="certificate-card__media"><img src="assets/certificate-14.jpg" alt="Certifikát Výroba a aplikace nehtového rovnátka" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>Výroba a aplikace nehtového rovnátka</strong><span>2023</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="Kineziotaping pro pedikérky" aria-label="Zvětšit certifikát Kineziotaping pro pedikérky">
+              <span class="certificate-card__media"><img src="assets/certificate-15.jpg" alt="Certifikát Kineziotaping pro pedikérky" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>Kineziotaping pro pedikérky</strong><span>2024</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="Přístrojová pedikúra" aria-label="Zvětšit certifikát Přístrojová pedikúra">
+              <span class="certificate-card__media"><img src="assets/certificate-16.jpg" alt="Certifikát zaškolení na přístrojovou pedikúru" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>Přístrojová pedikúra</strong><span>2023</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="Úvod do světa OPI" aria-label="Zvětšit certifikát Úvod do světa OPI">
+              <span class="certificate-card__media"><img src="assets/certificate-17.jpg" alt="Certifikát Úvod do světa OPI" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>Úvod do světa OPI</strong><span>2024</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="Prověřená společnost" aria-label="Zvětšit certifikát Prověřená společnost 2024">
+              <span class="certificate-card__media"><img src="assets/certificate-18.jpg" alt="Certifikát Prověřená společnost 2024" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>Prověřená společnost</strong><span>2024</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="Pedikérská péče o rizikovou nohu u diabetika" aria-label="Zvětšit osvědčení Pedikérská péče o rizikovou nohu u diabetika">
+              <span class="certificate-card__media"><img src="assets/certificate-19.jpg" alt="Osvědčení Pedikérská péče o rizikovou nohu u diabetika" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>Péče o rizikovou nohu u diabetika</strong><span>2025</span></span>
+            </button>
+            <button class="certificate-card reveal" type="button" data-certificate-open data-certificate-title="Estetická pedikúra" aria-label="Zvětšit certifikát Estetická pedikúra">
+              <span class="certificate-card__media"><img src="assets/certificate-20.jpg" alt="Certifikát Estetická pedikúra" loading="lazy" /></span>
+              <span class="certificate-card__caption"><strong>Estetická pedikúra</strong><span>2025</span></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery" id="galerie">
+        <div class="container">
+          <div class="section-heading gallery__heading reveal">
+            <div>
+              <p class="eyebrow">Galerie salonu</p>
+              <h2>Prostor, kde se budete cítit dobře.</h2>
+            </div>
+            <p>
+              Světlý a klidný salon, profesionální vybavení a příjemné zázemí
+              přímo v centru Trutnova.
+            </p>
+          </div>
+
+          <div class="gallery-grid">
+            <button class="gallery-item gallery-item--wide reveal" type="button" data-gallery-open data-gallery-title="Celkový pohled do salonu" aria-label="Zvětšit fotografii celkového pohledu do salonu">
+              <img src="assets/salon-01.jpg" alt="Celkový pohled do světlého interiéru salonu" width="1620" height="1080" loading="lazy" />
+            </button>
+            <button class="gallery-item reveal" type="button" data-gallery-open data-gallery-title="Čekací část salonu" aria-label="Zvětšit fotografii čekací části salonu">
+              <img src="assets/salon-02.jpg" alt="Čekací část salonu s posezením" width="1620" height="1080" loading="lazy" />
+            </button>
+            <button class="gallery-item reveal" type="button" data-gallery-open data-gallery-title="Pedikérské pracoviště" aria-label="Zvětšit fotografii pedikérského pracoviště">
+              <img src="assets/salon-03.jpg" alt="Pedikérské pracoviště s profesionálním vybavením" width="1620" height="1080" loading="lazy" />
+            </button>
+            <button class="gallery-item reveal" type="button" data-gallery-open data-gallery-title="Ošetřovací zóny salonu" aria-label="Zvětšit fotografii ošetřovacích zón salonu">
+              <img src="assets/salon-04.jpg" alt="Dvě ošetřovací zóny Andělského pedikérského salonu" width="1620" height="1080" loading="lazy" />
+            </button>
+            <button class="gallery-item reveal" type="button" data-gallery-open data-gallery-title="Odborné certifikáty a osvědčení" aria-label="Zvětšit fotografii odborných certifikátů a osvědčení">
+              <img src="assets/salon-05.jpg" alt="Ošetřovací křeslo, kosmetika a odborné certifikáty" width="1620" height="1080" loading="lazy" />
+              <span class="gallery-item__caption">Odborné certifikáty a osvědčení</span>
+            </button>
+            <button class="gallery-item reveal" type="button" data-gallery-open data-gallery-title="Klidná čekací část" aria-label="Zvětšit fotografii klidné čekací části">
+              <img src="assets/salon-06.jpg" alt="Klidná čekací část s křesly a andělskými dekoracemi" width="1620" height="1080" loading="lazy" />
+            </button>
+            <button class="gallery-item gallery-item--wide reveal" type="button" data-gallery-open data-gallery-title="Vstupní a čekací část salonu" aria-label="Zvětšit fotografii vstupní a čekací části salonu">
+              <img src="assets/salon-07.jpg" alt="Vstupní a čekací část salonu" width="1620" height="1080" loading="lazy" />
+            </button>
+            <button class="gallery-item gallery-item--wide reveal" type="button" data-gallery-open data-gallery-title="Vstupní dveře vedle Vesny" aria-label="Zvětšit fotografii vstupních dveří vedle Vesny">
+              <img src="assets/salon-08.jpg" alt="Černé vstupní dveře do salonu vedle Vesny" width="1620" height="1080" loading="lazy" />
+              <span class="gallery-item__caption">Vstupní dveře vedle Vesny</span>
+            </button>
+            <button class="gallery-item reveal" type="button" data-gallery-open data-gallery-title="Vstup z podloubí" aria-label="Zvětšit fotografii vstupu z podloubí">
+              <img src="assets/salon-09.jpg" alt="Podloubí v Bulharské ulici u vstupu do salonu" width="1620" height="1080" loading="lazy" />
+              <span class="gallery-item__caption">Vstup z podloubí</span>
+            </button>
           </div>
         </div>
       </section>
@@ -293,38 +432,81 @@
               <address>
                 Bulharská 59<br />541 01 Trutnov
               </address>
-              <p>V centru města, v podloubí od Belly směrem k Mobydicku. Parkování je možné před salonem nebo v okolí.</p>
+              <p><strong>Vstup do salonu jsou černé dveře vedle Vesny.</strong> Salon je v přízemí a je téměř bezbariérový. Parkování je možné před salonem nebo v okolí.</p>
               <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=And%C4%9Blsk%C3%BD+pedik%C3%A9rsk%C3%BD+sal%C3%B3n+Bulharsk%C3%A1+59+Trutnov" target="_blank" rel="noopener noreferrer">Otevřít v mapě</a>
             </div>
             <div class="detail-block detail-block--split">
               <div>
                 <span>Otevírací doba</span>
-                <p>Po–Pá&nbsp;&nbsp;7:00–19:00<br />So&nbsp;&nbsp;7:00–13:00<br />Ne&nbsp;&nbsp;zavřeno</p>
+                <p>Dle telefonické domluvy</p>
               </div>
               <div>
                 <span>Platba</span>
-                <p>Hotově, kartou<br />nebo QR platbou</p>
+                <p>Hotově nebo QR platbou.<br />Platba kartou není možná.</p>
               </div>
             </div>
             <div class="detail-block detail-block--contact">
               <a href="mailto:bejrovi@seznam.cz">bejrovi@seznam.cz</a>
               <a href="tel:+420604866778">+420 604 866 778</a>
             </div>
+            <div class="social-links" aria-label="Sociální sítě">
+              <a href="https://www.facebook.com/profile.php?id=61565397658769" target="_blank" rel="noopener noreferrer" aria-label="Andělský pedikérský salón na Facebooku">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4.2c-.5-.1-2.2-.2-4.2-.2C8.8 4 7 6.4 7 10.7V14H3v4h4v10h5V18h4l.7-4H12v-2.9C12 9.9 12.4 8 14 8Z" /></svg>
+                Facebook
+              </a>
+              <a href="https://www.instagram.com/andelsky_pedikersky_salon/" target="_blank" rel="noopener noreferrer" aria-label="Andělský pedikérský salón na Instagramu">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" class="social-icon-dot" /></svg>
+                Instagram
+              </a>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
+    <dialog class="certificate-dialog" data-certificate-dialog aria-labelledby="certificate-dialog-title">
+      <button class="certificate-dialog__close" type="button" data-certificate-close aria-label="Zavřít zvětšený certifikát">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+      </button>
+      <div class="certificate-dialog__content">
+        <div class="certificate-dialog__image-wrap">
+          <img data-certificate-image alt="" />
+        </div>
+        <div class="certificate-dialog__caption">
+          <p class="eyebrow">Certifikát</p>
+          <h2 id="certificate-dialog-title" data-certificate-dialog-title></h2>
+          <p>Kliknutím mimo dokument nebo klávesou Esc zavřete náhled.</p>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="certificate-dialog gallery-dialog" data-gallery-dialog aria-labelledby="gallery-dialog-title">
+      <button class="certificate-dialog__close" type="button" data-gallery-close aria-label="Zavřít zvětšenou fotografii">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+      </button>
+      <div class="certificate-dialog__content">
+        <div class="certificate-dialog__image-wrap">
+          <img data-gallery-image alt="" />
+        </div>
+        <div class="certificate-dialog__caption">
+          <p class="eyebrow">Fotogalerie</p>
+          <h2 id="gallery-dialog-title" data-gallery-dialog-title></h2>
+          <p>Kliknutím mimo fotografii nebo klávesou Esc zavřete náhled.</p>
+        </div>
+      </div>
+    </dialog>
+
     <footer class="site-footer">
       <div class="container footer-inner">
-        <a class="brand brand--footer" href="#uvod">
-          <svg class="brand__mark" viewBox="0 0 42 42" aria-hidden="true">
-            <path d="M20.9 35.8C19.1 27.6 14.4 22 6 18.8c8.4-2.2 13.4-6.6 14.9-13.1 1.5 6.5 6.5 10.9 14.9 13.1-8.4 3.2-13.1 8.8-14.9 17Z" />
-          </svg>
-          <span class="brand__text"><strong>Andělský</strong><span>pedikérský salón</span></span>
+        <a class="brand brand--footer" href="#uvod" aria-label="Andělský pedikérský salón – úvod">
+          <img class="brand__logo" src="assets/salon-logo.jpg" alt="Andělský pedikérský salón" width="685" height="278" loading="lazy" />
         </a>
         <p>© <span data-year></span> Jana Bejrová · IČ 21109516</p>
-        <a href="https://www.notino.cz/salony/andelsky-pedikersky-salon/" target="_blank" rel="noopener noreferrer">Rezervační profil Notino</a>
+        <div class="footer-links">
+          <a href="https://www.notino.cz/salony/andelsky-pedikersky-salon/" target="_blank" rel="noopener noreferrer">Rezervace Notino</a>
+          <a href="https://www.facebook.com/profile.php?id=61565397658769" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/andelsky_pedikersky_salon/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
       </div>
     </footer>
 

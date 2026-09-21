@@ -51,3 +51,67 @@ if (reduceMotion || !("IntersectionObserver" in window)) {
 
   revealItems.forEach((item) => observer.observe(item));
 }
+
+const certificateDialog = document.querySelector("[data-certificate-dialog]");
+const certificateImage = document.querySelector("[data-certificate-image]");
+const certificateTitle = document.querySelector("[data-certificate-dialog-title]");
+const certificateClose = document.querySelector("[data-certificate-close]");
+
+if (certificateDialog && certificateImage && certificateTitle && certificateClose) {
+  document.querySelectorAll("[data-certificate-open]").forEach((card) => {
+    card.addEventListener("click", () => {
+      const previewImage = card.querySelector("img");
+      if (!previewImage) return;
+
+      certificateImage.src = previewImage.currentSrc || previewImage.src;
+      certificateImage.alt = previewImage.alt;
+      certificateTitle.textContent = card.dataset.certificateTitle || previewImage.alt;
+      document.body.classList.add("certificate-open");
+      certificateDialog.showModal();
+    });
+  });
+
+  certificateClose.addEventListener("click", () => certificateDialog.close());
+
+  certificateDialog.addEventListener("click", (event) => {
+    if (event.target === certificateDialog) certificateDialog.close();
+  });
+
+  certificateDialog.addEventListener("close", () => {
+    document.body.classList.remove("certificate-open");
+    certificateImage.removeAttribute("src");
+    certificateImage.alt = "";
+  });
+}
+
+const galleryDialog = document.querySelector("[data-gallery-dialog]");
+const galleryImage = document.querySelector("[data-gallery-image]");
+const galleryTitle = document.querySelector("[data-gallery-dialog-title]");
+const galleryClose = document.querySelector("[data-gallery-close]");
+
+if (galleryDialog && galleryImage && galleryTitle && galleryClose) {
+  document.querySelectorAll("[data-gallery-open]").forEach((item) => {
+    item.addEventListener("click", () => {
+      const previewImage = item.querySelector("img");
+      if (!previewImage) return;
+
+      galleryImage.src = previewImage.currentSrc || previewImage.src;
+      galleryImage.alt = previewImage.alt;
+      galleryTitle.textContent = item.dataset.galleryTitle || previewImage.alt;
+      document.body.classList.add("certificate-open");
+      galleryDialog.showModal();
+    });
+  });
+
+  galleryClose.addEventListener("click", () => galleryDialog.close());
+
+  galleryDialog.addEventListener("click", (event) => {
+    if (event.target === galleryDialog) galleryDialog.close();
+  });
+
+  galleryDialog.addEventListener("close", () => {
+    document.body.classList.remove("certificate-open");
+    galleryImage.removeAttribute("src");
+    galleryImage.alt = "";
+  });
+}
